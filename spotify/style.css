@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(235, 235, 235);
+}
+
+nav .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.3rem 4rem;
+    background: #fff;
+}
+
+nav .wrapper .left,
+nav .wrapper .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .wrapper .left{
+    padding-left: 3rem;
+    display: flex;
+    gap: 0.7rem;
+}
+
+nav .wrapper .logo i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #0a66c2;
+}
+
+nav .wrapper .left .input{
+    background: rgb(237, 245, 246);
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+nav .wrapper .left .input input[type='search']{
+    width: 15rem;
+    border: none;
+    background: transparent;
+}
+
+nav .wrapper .left .input input[type='search']::placeholder{
+    font-size: 0.8rem;
+    color: rgb(49, 49, 49);
+    font-weight: 100;
+}
+
+nav .wrapper .left .input i{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+nav .wrapper .right .home,
+nav .wrapper .right .network,
+nav .wrapper .right .jobs,
+nav .wrapper .right .message,
+nav .wrapper .right .notification,
+nav .wrapper .right .me,
+nav .wrapper .right .work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+nav .wrapper .right .home,
+nav .wrapper .right .network:hover,
+nav .wrapper .right .jobs:hover,
+nav .wrapper .right .message:hover,
+nav .wrapper .right .notification:hover,
+nav .wrapper .right .me .down:hover,
+nav .wrapper .right .work .down:hover{
+    color: #000;
+}
+
+nav .wrapper .right .network,
+nav .wrapper .right .jobs,
+nav .wrapper .right .message,
+nav .wrapper .right .notification,
+nav .wrapper .right .work{
+    color: gray;
+}
+
+nav .wrapper .right .home i,
+nav .wrapper .right .network i,
+nav .wrapper .right .jobs i,
+nav .wrapper .right .message i,
+nav .wrapper .right .notification i{
+    font-size: 1.2rem;
+}
+
+
+nav .wrapper .right .me .down,
+nav .wrapper .right .work .down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: gray;
+}
+nav .wrapper .right .me i:first-child{
+    background: gray;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    width: 7rem;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+}
+
+.wrapper a:hover{
+    text-decoration: underline;
+}
+
+/* ====================== Sidebar =================== */
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 52% 28%;
+    gap: 1.4rem;
+    width: 85%;
+    margin: 1.8rem auto;
+}
+
+aside .sidebar{
+    background: #fff;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.sidebar .top {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(82, 92, 105);
+    position: absolute;
+    
+}
+
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 3%;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid #fff;
+    
+}
+
+aside .sidebar .profile{
+    position: relative;
+    text-align: center;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.sidebar .profile a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sidebar .profile a:hover{
+    text-decoration: underline;
+}
+
+.sidebar .profile small{
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.sidebar .view{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 6%;
+}
+
+.sidebar .view .views{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-weight: 100;
+    padding-bottom: 0.4rem;
+}
+
+.sidebar .view .views:hover{
+    background-color: rgb(223, 223, 223);
+}
+
+.sidebar .view .views h6{
+    color: gray;
+    font-weight: 100;
+}
+
+.sidebar .view .views a{
+    color: rgb(39, 39, 219);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.sidebar .premium{
+    position: relative;
+    top: 7%;
+}
+
+
+.sidebar .premium h6{
+    color: gray;
+    font-weight: 100;
+    margin-left: 0.2rem;
+}
+
+.sidebar .premium a{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    color: #000;
+}
+
+.sidebar .premium a i{
+    color: rgb(211, 211, 33);
+}
+
+hr#premium,
+hr#view,
+hr#profile{
+    margin: 0.5rem 0 0 0;
+}
+
+.items{
+    position: relative;
+    top: 7%;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.4rem 0 0 1rem;
+    color: gray;
+    cursor: pointer;
+}
+
+
+aside .recent_jobs{
+    background: #fff;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 68vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+aside .recent_jobs .recent{
+    margin: 1rem;
+}
+
+aside .recent_jobs .recent h6{
+    font-weight: 100;
+}
+
+aside .recent_jobs .recent .one{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    gap: 0.5rem;
+    color: rgb(83, 83, 83);
+}
+
+aside .recent_jobs .recent .one i{
+    font-size: 0.8rem;
+}
+
+aside .recent_jobs .groups{
+    margin: 2rem 0 0 1rem;
+}
+
+aside .recent_jobs .groups h5{
+    color: #0a66c2;
+    font-size: 0.7rem;
+}
+
+aside .recent_jobs .groups .two{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    gap: 0.5rem;
+    color: rgb(83, 83, 83);
+}
+
+.groups .show{
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    color: gray;
+}
+
+aside .events{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1rem 0 1rem;
+}
+
+aside .events h6:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+aside .events i{
+    color: gray;
+    cursor: pointer;
+}
+
+.discover{
+    text-align: center;
+    margin: 2rem 0 0 0;
+    border-top: 1px solid rgb(144, 144, 144);
+    padding-top: 1rem;
+}
+
+.discover a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+/* ================ main section starts here ================= */
+
+main{
+    background: #fff;
+    border-radius: 0.8rem;
+    height: 60vh;
+    position: relative;
+}
+
+main #close{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    color: gray;
+}
+
+main .event{
+    margin: 1.5rem 0 0 1rem;
+}
+
+main .event h3{
+    font-weight: 200;
+}
+
+main .box{
+    width: 95%;
+    overflow: hidden;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+}
+
+main .box img{
+    width: 100%;
+}
+
+main .box .content{
+    padding: 0.5rem 1rem;
+}
+
+main .box .content p{
+    font-weight: 100;
+}
+
+main .box .btn{
+    border: none;
+    background: #0a66c2;
+    padding: 0.6rem 1rem;
+    border-radius: 5rem;
+    margin: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s all ease;
+}
+
+main .box .btn:hover{
+    background: #0956a3;
+}
+
+main .media{
+    background: #fff;
+    height: 20vh;
+    margin-top: 1rem;
+    border-radius: 0.8rem;
+}
+
+main .media .search{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+main .media .search img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main .media .search input{
+    border-radius: 5rem;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 0 1.2rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+main .media .search input:hover{
+    background: rgb(233, 233, 233);
+}
+
+main .media .posts{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+main .media .posts .post{
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+main .media .posts .post h5{
+    font-weight: 400;
+}
+
+main .media .posts .post:nth-child(1) i{
+    color: #0a66c2;
+}
+main .media .posts .post:nth-child(2) i{
+    color: #19c20a;
+}
+main .media .posts .post:nth-child(3) i{
+    color: #3187dd;
+}
+main .media .posts .post:nth-child(4) i{
+    color: #c20ab9;
+}
+
+main .media .posts .post:hover{
+    background: rgb(235, 235, 235);
+    border-radius: 0.2rem;
+}
+
+
+/* ============ Right side starts here ============= */
+
+.right_side{
+    background: #fff;
+    border-radius: 0.8rem;
+    height: 62vh;
+}
+
+.right_side .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.right_side .news h4{
+    font-weight: 400;
+}
+
+.right_side .latest_news{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.right_side .latest_news:hover{
+    background: rgb(231, 231, 231);
+}
+
+.right_side .latest_news .one{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right_side .latest_news .one h5{
+    font-weight: 500;
+}
+
+.right_side .latest_news .one i{
+    font-size: 0.5rem;
+    color: gray;
+}
+
+.right_side .latest_news .two{
+    margin: 0 1.9rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.right_side .show_more{
+    display: flex;
+    gap: 0.5rem;
+    color: gray;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.right_side .show_more h5{
+    font-weight: 400;
+}
